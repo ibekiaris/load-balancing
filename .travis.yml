@@ -1,14 +1,18 @@
 language: php
+sudo: false
 
+cache:
+  directories:
+    - $HOME/.composer/cache
 php:
-  - 7.2.0
+  - 7.2
+  - 7.3
 
 before_install:
   - composer self-update
 
 install:
   - travis_retry composer install
-  - composer require satooshi/php-coveralls:~0.6@stable
 
 script:
   - composer test

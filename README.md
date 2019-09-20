@@ -1,5 +1,7 @@
 # ibekiaris/load-balancing
 
+[![Build Status](https://travis-ci.com/ibekiaris/load-balancing.svg?branch=master)](https://travis-ci.com/ibekiaris/load-balancing)
+
 ibekiaris/load-balancing is a PHP 7.2+ library implementing load balancing in PHP.
 
 ## About

@@ -13,6 +13,7 @@ before_install:
 
 install:
   - travis_retry composer install
+  - composer require symfony/cache
 
 script:
   - composer test

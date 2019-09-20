@@ -37,8 +37,7 @@ class WeightMapTest extends TestCase
             '709911f6-95ae-11e9-bf02-95b68eb31d60' => 4
         ];
 
-        $weightMap = array_keys($weights);
-        $weightMap = new WeightMap($weightMap);
+        $weightMap = new WeightMap($weights);
 
         $this->assertEquals(10, $weightMap->maxWeight());
     }
@@ -52,8 +51,7 @@ class WeightMapTest extends TestCase
             '709911f6-95ae-11e9-bf02-95b68eb31d60' => 4
         ];
 
-        $weightMap = array_keys($weights);
-        $weightMap = new WeightMap($weightMap);
+        $weightMap = new WeightMap($weights);
 
         $this->assertEquals(19, $weightMap->totalWeights());
     }

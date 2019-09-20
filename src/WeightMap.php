@@ -19,11 +19,11 @@ final class WeightMap
     {
         /**
          * @var string $resourceId
-         * @var int $weigh
+         * @var int $weight
          */
-        foreach ($resourcesWeights as $resourceId => $weigh) {
+        foreach ($resourcesWeights as $resourceId => $weight) {
             $resourceIdObj = ResourceId::fromString($resourceId);
-            $this->mapValue($resourceIdObj, $weigh);
+            $this->mapValue($resourceIdObj, $weight);
         }
     }
 

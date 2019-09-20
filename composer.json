@@ -27,7 +27,7 @@
     }
   },
   "scripts": {
-    "test": "phpunit --coverage-clover build/logs/clover.xml"
+    "test": "phpunit"
   },
   "require": {
     "php": ">=7.2.0",

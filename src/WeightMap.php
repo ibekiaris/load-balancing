@@ -13,26 +13,18 @@ final class WeightMap
     private $gcd = 0;
 
     /**
-     * @param array<string,int> $resoucesWeighs
+     * @param array<string,int> $resourcesWeights
      */
-    public function __construct(array $resourcesWeighs)
+    public function __construct(array $resourcesWeights)
     {
         /**
          * @var string $resourceId
          * @var int $weigh
          */
-        foreach ($resourcesWeighs as $resourceId => $weigh) {
+        foreach ($resourcesWeights as $resourceId => $weigh) {
             $resourceIdObj = ResourceId::fromString($resourceId);
             $this->mapValue($resourceIdObj, $weigh);
         }
-    }
-
-    /**
-     * @return array<string, int>
-     */
-    public function values(): array
-    {
-        return $this->container;
     }
 
     /**
@@ -51,7 +43,7 @@ final class WeightMap
     }
 
     /**
-     * @param array $resources
+     * @param ComputingResource[] $resources
      */
     public static function equal(array $resources): WeightMap
     {

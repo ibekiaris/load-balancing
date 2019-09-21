@@ -2,7 +2,7 @@
 
 namespace IBekiaris\LoadBalancing;
 
-abstract class LoadBalancerWithStrategy implements LoadBalancingStrategy
+abstract class LoadBalancerWithStrategy implements LoadBalancer
 {
     private $strategy;
 

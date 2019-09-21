@@ -1,4 +1,4 @@
 .idea/
 composer.lock
-clover.xml
 vendor/
+build/

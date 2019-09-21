@@ -13,10 +13,9 @@ before_install:
 
 install:
   - travis_retry composer install
-  - composer require phpunit/php-code-coverage
 
 script:
   - composer test
 
 after_success:
-  - php vendor/bin/coveralls -v
+  - php vendor/bin/php-coveralls -v

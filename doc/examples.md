@@ -3,11 +3,11 @@
 
 ## Forward equally traffic to several message brokers
 
-Let's say that you have a daemon application that uses one instance of a message broker. There is a need to add
-an extra instance and you would like to equally forward traffic to both of them. 
-Each connection can be considered as a `ComputingResource`.
+Let's say that you have a daemon application that uses one instance of a message broker. 
+There is a need to add an extra instance and you would like to equally forward traffic 
+to both of those connection. 
 
-So, we have two `ComputingResources`:
+Each connection can be considered to be a `ComputingResource`.
 
 ```php
 <?php
@@ -60,8 +60,9 @@ final class Connection2 implements ComputingResource {
     }
 }
 ```
-Those two connections are a `Cluster` of computing resources, in which each resource 
-should have the same weight as others:
+
+Those two connections are considered to be a `Cluster` of Computing Resources, in which each resource 
+should have the same "weight" as others:
 
 ```php
 <?php
@@ -78,7 +79,7 @@ $resources = [
 $cluster = new Cluster($resources, WeightMap::equal($resources));
 ```
 
-We need a `LoadBalancer` with a `balancing strategy` to forward "traffic" to `Cluster's` computing resources:
+We need a `LoadBalancer` with a `Balancing Strategy` to forward "traffic" to `Cluster's` Computing Resources:
 
 ```php
 <?php

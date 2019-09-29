@@ -22,7 +22,7 @@ composer require ibekiaris/load-balancing
 
 ## Examples
 
-Those examples will help you better understand the way to use this library
+Those examples will help you better understand how to use this library
 
 [Examples](doc/examples.md)
 

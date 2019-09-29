@@ -20,6 +20,12 @@ The preferred method of installation is via [Packagist](https://packagist.org) a
 composer require ibekiaris/load-balancing
 ```
 
+## Examples
+
+Those examples will help you better understand the way to use this library
+
+[Examples](doc/examples.md)
+
 ## Copyright and license
 
 The ibekiaris/load-balancing library is copyright © [Ioannis Bekiaris](http://ibekiaris.me) and licensed for use under the MIT License (MIT). Please see [LICENSE](LICENSE) for more information.
